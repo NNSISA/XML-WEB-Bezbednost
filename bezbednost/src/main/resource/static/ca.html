@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CA</title>
+<script src="../js/ca.js" type="module"></script> 
+<script src="../js/logout.js" type="module"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+
+</head>
+<body>
+
+<h2>CA</h2>
+<div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav"> 
+            <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ssl.html">Self signed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ca.html">Issue CA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certificate.html">Issue Certificate</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" id="rg">
+            	<li class="nav-item">
+                	<a class="nav-link" href="register.html">Register</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+<div class="container">
+        <form id="certf">
+            <div class="form-group">
+                <label for="cn">Common name</label>
+                <input id="cn" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input id="surname" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="givenName">Given name</label>
+                <input id="givenName" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="o">Organization</label>
+                <input id="o" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ou">OrganizationUnit</label>
+                <input id="ou" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="c">Country</label>
+                <input id="c" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="e">Email</label>
+                <input id="e" type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="date">End date</label>
+                <input id="date" type="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Certificate signer</label>
+                <select class="form-control" id="signerSerialNumber">
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form> 
+    </div>
+</body>
+</html>
